@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "B/rUz0M//pCrUfT1Ul93E/1eoW62itlKmxoUv/l2yUF7ee0AY2fPXPfTJAXfuNkFGq5WUyMxexdCRfuJNI8dJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Inble\\source\\repos\\ddd-battleship\\src\\ddd.battleship.common\\ddd.battleship.common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Inble\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\Inble\\.nuget\\packages\\neventstore\\9.1.1\\neventstore.9.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
