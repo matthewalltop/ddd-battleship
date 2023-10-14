@@ -11,7 +11,17 @@ public abstract class AggregateBase
 		Version = 0;
 	}
 
-	public abstract void Apply(object @event);
+	public abstract void ApplyEvent(IEvent @event);
+
+	public void Apply(IEnumerable<IEvent> @events)
+	{
+		foreach (var @event in @events)
+		{
+			ApplyEvent(@event);
+			Version++;
+		}
+	}
+
 	public abstract IEnumerable<object> GetUncommittedEvents();
 	public abstract void ClearUncommittedEvents();
 	public abstract void LoadFromHistory(IEnumerable<object> history);

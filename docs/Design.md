@@ -27,14 +27,35 @@ The player owning must state 'You sank my `{nameOfShip}`'
 The game continues until one player has lost all of their remaining ships
 
 
+# Game
+---
+
+## Properties
+---
+`Id` - `Guid`
+`Players` - `PlayersVO`
+	- `PlayerOne` - `Guid`
+	- `PlayerTwo` - `Guid`
+`Boards` - `BoardsVO`
+
+
+## Commands
+---
+
+
+## Events
+---
+
+
+## Queries
+
 Game = Aggregate
 - Players
    - Only two players
    - Players place ships on their own board
-   - 
 - Boards
-   - A board is assigned to a player
-   - Only two
+   - Two boards are assigned to a Player
+   - Ships are placed on the board by the player
 - CurrentPlayer
 - GameOver
 - Winner
@@ -56,7 +77,7 @@ Board = Entity
     
 
 
-Player = Entity
+Player = Aggregate
   - Name - 
   - Board - 
   - NumberOfShips -
