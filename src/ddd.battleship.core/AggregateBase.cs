@@ -25,6 +25,6 @@ public abstract class AggregateBase
 	public abstract IEnumerable<object> GetUncommittedEvents();
 	public abstract void ClearUncommittedEvents();
 	public abstract void LoadFromHistory(IEnumerable<object> history);
-	public abstract void LoadFromSnapshot(Snapshot snapshot);
-	public abstract Snapshot TakeSnapshot();
+	// public abstract void LoadFromSnapshot(Snapshot snapshot);
+	// public abstract Snapshot TakeSnapshot();
 }

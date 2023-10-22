@@ -5,7 +5,11 @@ using ddd.battleship.core;
 
 public class Game : AggregateBase
 {
-	public override void ApplyEvent(object @event)
+	public Game(Guid id) : base(id)
+	{
+
+	}
+	public override void ApplyEvent(IEvent @event)
 	{
 		throw new NotImplementedException();
 	}
@@ -25,13 +29,13 @@ public class Game : AggregateBase
 		throw new NotImplementedException();
 	}
 
-	public override void LoadFromSnapshot(Snapshot snapshot)
-	{
-		throw new NotImplementedException();
-	}
+	// public override void LoadFromSnapshot(Snapshot snapshot)
+	// {
+	// 	throw new NotImplementedException();
+	// }
 
-	public override Snapshot TakeSnapshot()
-	{
-		throw new NotImplementedException();
-	}
+	// public override Snapshot TakeSnapshot()
+	// {
+	// 	throw new NotImplementedException();
+	// }
 }
