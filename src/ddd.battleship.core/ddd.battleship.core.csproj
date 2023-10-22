@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="neventstore" Version="9.1.1" />
+    <PackageReference Include="neventstore" />
   </ItemGroup>
 
 </Project>

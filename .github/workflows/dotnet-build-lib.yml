@@ -1,6 +1,14 @@
 name: dotnet build and test
 
-on: [push]
+on: ['push']
+
+
+# on:
+#     workflow_call:
+#         inputs:
+#             csProj:
+#                required: true	            
+#                type: string
 
 jobs:
   build:
@@ -8,6 +16,8 @@ jobs:
     strategy:
       matrix:
         dotnet-version: [ '7.x.x' ]
+        os: ['windows-latest']
+        working-directory: ['src']
     steps:
         - uses: actions/checkout@v4
         - name: Setup dotnet
@@ -15,9 +25,11 @@ jobs:
           with:
             dotnet-version: ${{ matrix.dotnet-version }}
         - name: Install dependencies
-          run: dotnet restore
+          run: dotnet restore ${{ matrix.working-directory}}/*.sln
+        - name: Build solution
+          run: dotnet build ${{ matrix.working-directory}}/*.sln
         - name: Test with dotnet
-          run: dotnet test --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+          run: dotnet test ${{ matrix.working-directory}}/*.sln --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
         - name: Upload dotnet test results
           uses: actions/upload-artifact@v3
           with:
