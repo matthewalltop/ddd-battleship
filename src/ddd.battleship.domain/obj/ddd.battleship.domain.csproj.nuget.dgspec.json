@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\Inble\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Inble\\source\\repos\\ddd-battleship\\src\\ddd.battleship.common\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "C:\\Users\\Inble\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -43,6 +44,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "centralPackageVersions": {
+            "AutoFixture": "[4.17.0, )",
+            "Autofixture.Xunit2": "[4.17.0, )",
+            "coverlet.collector": "[3.1.2, )",
+            "FluentAssertions": "[6.9.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.1.0, )",
+            "Moq": "[4.18.4, )",
+            "neventstore": "[9.1.1, )",
+            "xunit": "[2.4.1, )",
+            "xunit.runner.visualstudio": "[2.4.3, )"
+          },
           "imports": [
             "net461",
             "net462",
@@ -72,6 +84,7 @@
         "packagesPath": "C:\\Users\\Inble\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Inble\\source\\repos\\ddd-battleship\\src\\ddd.battleship.core\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "C:\\Users\\Inble\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -101,8 +114,20 @@
           "dependencies": {
             "neventstore": {
               "target": "Package",
-              "version": "[9.1.1, )"
+              "version": "[9.1.1, )",
+              "versionCentrallyManaged": true
             }
+          },
+          "centralPackageVersions": {
+            "AutoFixture": "[4.17.0, )",
+            "Autofixture.Xunit2": "[4.17.0, )",
+            "coverlet.collector": "[3.1.2, )",
+            "FluentAssertions": "[6.9.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.1.0, )",
+            "Moq": "[4.18.4, )",
+            "neventstore": "[9.1.1, )",
+            "xunit": "[2.4.1, )",
+            "xunit.runner.visualstudio": "[2.4.3, )"
           },
           "imports": [
             "net461",
@@ -133,6 +158,7 @@
         "packagesPath": "C:\\Users\\Inble\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Inble\\source\\repos\\ddd-battleship\\src\\ddd.battleship.domain\\obj\\",
         "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
           "C:\\Users\\Inble\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -166,6 +192,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "centralPackageVersions": {
+            "AutoFixture": "[4.17.0, )",
+            "Autofixture.Xunit2": "[4.17.0, )",
+            "coverlet.collector": "[3.1.2, )",
+            "FluentAssertions": "[6.9.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.1.0, )",
+            "Moq": "[4.18.4, )",
+            "neventstore": "[9.1.1, )",
+            "xunit": "[2.4.1, )",
+            "xunit.runner.visualstudio": "[2.4.3, )"
+          },
           "imports": [
             "net461",
             "net462",
